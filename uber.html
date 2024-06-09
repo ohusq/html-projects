@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber input form</title>
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .request-title {
+            font-weight: 400;
+        }
+
+        input {
+            background-color: rgb(227, 227, 227);
+            border-style: none;
+            padding: 10px;
+            display: block;
+            margin: 10px 0;
+            width: 300px;
+        }
+
+        button {
+            width: 300px; /* Adjusted button width to match input width */
+            margin-top: 10px; /* Added margin-top to separate button from inputs */
+        }
+
+        .container-buttons {
+            display: flex;
+            justify-content: space-between; /* Adjusted button container alignment */
+        }
+
+        .cancel {
+            width: calc(50% - 5px); /* Adjusted button width */
+        }
+
+        .request {
+            width: calc(50% - 5px); /* Adjusted button width */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="request-title">Request a ride now</h1>
+
+    <div class="container-input">
+        <input type="text" placeholder="Enter pickup location">
+        <input type="text" placeholder="Enter destination">
+    </div>
+
+    <div class="container-buttons">
+        <button class="cancel">Cancel</button>
+        <button class="request">Request</button>
+    </div>
+</body>
+</html>
